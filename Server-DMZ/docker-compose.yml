@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web-dmz:
+    build:
+      context: ..
+      dockerfile: http.Dockerfile
+    container_name: apache-dmz
+    ports:
+      - "80:80"
+    volumes:
+      - ./config:/etc/apache2/sites-enabled
+      - ./html:/var/www
