@@ -1,6 +1,10 @@
 #!/bin/bash
 echo "Content-type: text/html"
 echo ""
-echo "<h2>Uptime (Docker)</h2><pre>"
+
+echo "<html><body>"
+echo "<h1>Uptime del Servidor</h1>"
+echo "<pre>"
 uptime
 echo "</pre>"
+echo "</body></html>"
